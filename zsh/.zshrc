@@ -102,7 +102,7 @@ export LDFLAGS="-L/usr/local/opt/llvm/lib"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
+alias zshconfig="nvim ~/.dotfiles/zsh/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export editor="nvim"
 alias vim="nvim"
