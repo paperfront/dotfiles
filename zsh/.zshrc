@@ -110,3 +110,5 @@ alias vim="nvim"
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
