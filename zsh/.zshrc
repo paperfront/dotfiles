@@ -104,7 +104,7 @@ export LDFLAGS="-L/usr/local/opt/llvm/lib"
 # Example aliases
 alias zshconfig="nvim ~/.dotfiles/zsh/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export editor="nvim"
+export EDITOR="nvim"
 alias vim="nvim"
 
 # Generated for envman. Do not edit.
