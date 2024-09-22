@@ -33,3 +33,6 @@ vim.opt.pumblend = 0
 
 -- fix automatic selection of completion options
 vim.opt.completeopt = { "menu", "menuone", "noinsert", "noselect" }
+
+-- used basedpyright
+vim.g.lazyvim_python_lsp = "basedpyright"
