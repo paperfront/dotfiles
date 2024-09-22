@@ -14,6 +14,9 @@ return {
     opts.completion = {
       completeopt = vim.o.completeopt,
     }
+    opts.experimental = {
+      ghost_text = true,
+    }
     opts.preselect = cmp.PreselectMode.None
     opts.mapping = vim.tbl_deep_extend("force", opts.mapping, {
       ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
