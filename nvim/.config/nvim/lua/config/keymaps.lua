@@ -53,26 +53,6 @@ vim.keymap.set("n", "<leader>tt", "<cmd>Twilight<CR>", { desc = "Toggle Twilight
 -- Zen mode
 vim.keymap.set("n", "<leader>z", "<cmd>ZenMode<CR>", { desc = "Toggle Zen Mode" })
 
--- Harpoon
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
-
-vim.keymap.set("n", "<leader>ha", mark.add_file)
-vim.keymap.set("n", "<leader>he", ui.toggle_quick_menu)
-
-vim.keymap.set("n", "<leader>h1", function()
-  ui.nav_file(1)
-end)
-vim.keymap.set("n", "<leader>h2", function()
-  ui.nav_file(2)
-end)
-vim.keymap.set("n", "<leader>h3", function()
-  ui.nav_file(3)
-end)
-vim.keymap.set("n", "<leader>h4", function()
-  ui.nav_file(4)
-end)
-
 -- Tmux window switching from Neovim
 vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
 vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
@@ -91,3 +71,6 @@ vim.keymap.set("n", "<leader>n", "<cmd> Neorg workspace notes<CR>")
 --   require("duck").cook()
 -- end, {})
 --
+
+-- Compiler
+-- vim.api.nvim_set_keymap("n", "<leader>cc", "<cmd>cd %:h<cr><cmd>CompilerOpen<cr>", { noremap = true, silent = true })

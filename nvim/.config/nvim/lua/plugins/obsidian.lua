@@ -20,7 +20,7 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "~/GithubRepos/obsidian-primary/",
+        path = "~/obsidian-primary/",
       },
     },
 

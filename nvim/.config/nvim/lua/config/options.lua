@@ -30,3 +30,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "81"
 vim.opt.pumblend = 0
+
+-- fix automatic selection of completion options
+vim.opt.completeopt = { "menu", "menuone", "noinsert", "noselect" }
