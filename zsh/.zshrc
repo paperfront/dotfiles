@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting fzf-dir-navigator you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,6 +120,16 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 export GOPATH=$HOME/go
 export PATH=${PATH}:${GOPATH}/bin
+export PATH=${PATH}:$HOME/.emacs.d/bin
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/mlacayo/.opam/opam-init/init.zsh' ]] || source '/Users/mlacayo/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
